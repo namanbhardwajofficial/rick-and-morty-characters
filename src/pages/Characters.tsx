@@ -11,7 +11,7 @@ export const CharactersPage = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
-  
+   
   const page = parseInt(searchParams.get('page') || '1', 10);
   
   const { data, isLoading, error, isRefetching } = useCharacters(page);

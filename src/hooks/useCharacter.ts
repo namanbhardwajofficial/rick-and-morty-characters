@@ -9,4 +9,4 @@ export const useCharacter = (id: number) => {
     retry: 3,
     enabled: !!id && id > 0,
   });
-};
+}; 

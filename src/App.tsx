@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CharactersPage } from "./pages/Characters";
 import { CharacterDetailPage } from "./pages/CharacterDetail";
 import { IndexPage } from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -40,6 +41,7 @@ const App = () => (
               <Route path="/" element={<IndexPage />} />
               <Route path="/characters" element={<CharactersPage />} />
               <Route path="/character/:id" element={<CharacterDetailPage />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
         </BrowserRouter>

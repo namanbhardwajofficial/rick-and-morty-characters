@@ -2,7 +2,7 @@ import {
   createColumnHelper,
   flexRender,
   getCoreRowModel,
-  useReactTable,
+  useReactTable, 
 } from '@tanstack/react-table';
 import { Character } from '@/types/api';
 

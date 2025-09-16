@@ -13,4 +13,4 @@ export const IndexPage = () => {
       <p className="text-gray-400">Redirecting to characters...</p>
     </div>
   );
-};
+}; 

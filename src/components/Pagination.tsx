@@ -7,7 +7,7 @@ interface PaginationProps {
   onPageChange: (page: number) => void;
   hasNext: boolean;
   hasPrev: boolean;
-}
+} 
 
 export const Pagination = ({
   currentPage,

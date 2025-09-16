@@ -8,7 +8,7 @@ import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 export const CharacterDetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   
   const from = parseInt(searchParams.get('from') || '1', 10);
   
